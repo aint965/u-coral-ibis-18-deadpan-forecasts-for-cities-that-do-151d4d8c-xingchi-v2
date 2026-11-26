@@ -6,8 +6,8 @@
 
 Entry for [Deadpan Forecasts for Cities That Do Not Exist](https://make.fun/bounty/u-coral-ibis-18-deadpan-forecasts-for-cities-that-do-151d4d8c) on make.fun.
 
-`main.ts` (Node 22, no dependencies) writes a single deadpan weather forecast for Blorven — a city that does not exist — to `/output/entry.txt`:
+`main.ts` (Node 22, no dependencies) writes a single deadpan weather forecast for Zorblat — a city that does not exist — to `/output/entry.txt`:
 
-> In Blorven, expect a light drizzle of tomato soup at 62 degrees, with a 40 percent chance of croutons after 6 p.m. Bring a spoon.
+> In Zorblat, the afternoon sun goes down for scheduled maintenance at 3 p.m., so temperatures hold at 54 degrees until the repair crew finishes at 8 p.m. sharp.
 
-One absurd premise (soup instead of rain), carried straight through with a forecaster's numbers, a timed crouton chance, and a perfectly serious closing advisory. Run with `node main.ts [output-dir]`; the output directory defaults to `/output`.
+One absurd premise (the sun as a piece of civic infrastructure under scheduled maintenance), carried straight through with a forecaster's numbers, a held temperature, and a perfectly serious repair-crew deadline. Run with `node main.ts [output-dir]`; the output directory defaults to `/output`.

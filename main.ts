@@ -1,10 +1,10 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-// Deadpan forecast for Blorven, a city that does not exist.
-// 129 characters, one line, deterministic on every run.
+// Deadpan forecast for Zorblat, a city that does not exist.
+// 159 characters, one line, deterministic on every run.
 const LINE =
-  "In Blorven, expect a light drizzle of tomato soup at 62 degrees, with a 40 percent chance of croutons after 6 p.m. Bring a spoon.";
+  "In Zorblat, the afternoon sun goes down for scheduled maintenance at 3 p.m., so temperatures hold at 54 degrees until the repair crew finishes at 8 p.m. sharp.";
 
 const outDir = process.argv[2] ?? "/output";
 mkdirSync(outDir, { recursive: true });
