@@ -1,0 +1,14 @@
+import { readFileSync } from "node:fs";
+const [a, b] = process.argv.slice(2).map((p) => readFileSync(p));
+const text = a.toString("utf8");
+const line = text.replace(/\n$/, "");
+console.log("identical:", Buffer.compare(a, b) === 0);
+console.log("bytes:", a.length);
+console.log("chars incl newline:", [...text].length);
+console.log("chars excl newline:", [...line].length);
+console.log("single line:", !line.includes("\n"));
+console.log("non-whitespace:", line.trim().length > 0);
+console.log("line:", line);
+if (Buffer.compare(a, b) !== 0) process.exit(1);
+if ([...line].length < 1 || [...text].length > 160) process.exit(1);
+if (line.includes("\n")) process.exit(1);
